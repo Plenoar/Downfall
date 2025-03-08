@@ -52,28 +52,12 @@ void createCircle(SDL_Surface *surface, Circle c, Uint32 color) {
         }
     }
 void createPlatform(SDL_Surface *surface) {
-    SDL_Rect rect1 = {1, 900, 70, 35};
-    SDL_FillSurfaceRect(surface, &rect1, COLOR_SUN);
 
-    SDL_Rect rect0 = {100, 900, 70, 35};
-    SDL_FillSurfaceRect(surface, &rect0, COLOR_SUN);
-
-    SDL_Rect rect2 = {200, 900, 70, 35};
-    SDL_FillSurfaceRect(surface, &rect2, COLOR_SUN);
-
-    SDL_Rect rect3 = {300, 900, 70, 35};
-    SDL_FillSurfaceRect(surface, &rect3, COLOR_SUN);
-
-    SDL_Rect rect4 = {400, 900, 70, 35};
-    SDL_FillSurfaceRect(surface, &rect4, COLOR_SUN);
-
-    SDL_Rect rect5 = {500, 900, 70, 35};
-    SDL_FillSurfaceRect(surface, &rect5, COLOR_SUN);
-
-    SDL_Rect rect6 = {600, 900, 70, 35};
-    SDL_FillSurfaceRect(surface, &rect6, COLOR_SUN);
+    for (int i = 0; i < 18; i++) {
+        SDL_Rect rect = {i * 100.0f + 1, 900.0f, 70.0f, 35.0f};
+        SDL_FillSurfaceRect(surface, &rect, COLOR_SUN);
+    }
 }
-
 int main(void)
 {
 
