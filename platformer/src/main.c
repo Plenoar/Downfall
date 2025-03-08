@@ -78,13 +78,29 @@ int main(void)
 {
 
     SDL_Init(SDL_INIT_VIDEO);
+    {
+        fprintf(stderr, "SDL_Init Error: %s\n", SDL_GetError());
+        return 1;
+    }
+
 
     SDL_Window* window =  SDL_CreateWindow("the grace of death", 1700,1000 , 0  );
+        if (window == NULL) {
+        fprintf(stderr, "SDL_CreateWindow Error: %s\n", SDL_GetError());
+        SDL_Quit();
+        return 1;
+    }
 
     SDL_Surface* surface = SDL_GetWindowSurface(window);
+        if (surface == NULL) {
+        fprintf(stderr, "SDL_GetWindowSurface Error: %s\n", SDL_GetError());
+        SDL_DestroyWindow(window);
+        SDL_Quit();
+        return 1;
+    }
 
 
-    Circle c = {10,10,100};
+    Circle c = {10,10,100}; 
 
 
     int running = 1;
@@ -105,15 +121,19 @@ int main(void)
                 c.x = x;
                 c.y = y;   
 
-                createCircle(surface, c, COLOR_SUN);       
-
+                createCircle(surface, c, COLOR_SUN);  // the objects which are to be used in the game      
                 createPlatform(surface);
+                
                 SDL_UpdateWindowSurface(window);
                 SDL_ClearSurface(surface,0,0,0,0);                
                 
             }
         }
     }
+    SDL_DestroyWindow(window);
+    SDL_Quit();
+    return 0;
+
 }
 
 
