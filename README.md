@@ -14,9 +14,9 @@ some stuufs that ill implement in the near future
 
 -- colission detection 
 
--- wasd keyboard movements 
+-- wasd keyboard movements // i did it
 
--- an actual playable map 
+-- an actual playable map // kinda
 
 THATS IT FOR NOW G
 
