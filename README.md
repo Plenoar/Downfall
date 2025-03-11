@@ -10,7 +10,7 @@ c for the logic , though ill probably use cpp in the future ( but i dont know cp
 
 some stuufs that ill implement in the near future 
 
--- camera 
+-- camera // i did it , but the camera needs a lot work and im really nitpicky about it
 
 -- colission detection 
 
