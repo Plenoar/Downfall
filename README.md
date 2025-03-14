@@ -1,5 +1,5 @@
 # Downfall 
-Just some small platform game made in sdl3 and c and if i figure out how to use box2d maybe ill add it too
+Just some small platform game made in sdl3 and c and if i figure out how to use box2d OR CHIPMUNK maybe ill add it too
 
 
 
@@ -14,7 +14,9 @@ some stuufs that ill implement in the near future
 
 -- colission detection 
 
--- wasd keyboard movements // i did it
+-- wasd keyboard movements // i did it , but its missing jump features 
+
+-- need an actual implementation of physics so that the objects obey some law of physics 
 
 -- an actual playable map // kinda
 
