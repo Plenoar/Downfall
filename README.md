@@ -10,13 +10,13 @@ c for the logic , though ill probably use cpp in the future ( but i dont know cp
 
 some stuufs that ill implement in the near future 
 
--- camera // i did it , but the camera needs a lot work and im really nitpicky about it
+-- camera // i did it , but the camera needs a lot of work and im really nitpicky about it
 
--- colission detection 
+-- colission detection // pseudo achieved 
 
--- wasd keyboard movements // i did it , but its missing jump features 
+-- wasd keyboard movements // i did it 
 
--- need an actual implementation of physics so that the objects obey some law of physics 
+-- need an actual implementation of physics so that the objects obey some law of physics // works for now
 
 -- an actual playable map // kinda
 
