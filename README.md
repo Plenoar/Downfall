@@ -1,4 +1,4 @@
-# Downfall 
+# Teach a man to make a game engine and he will spend all his time making one , teach a man to make a game and he will spend all his time making a game engine 
 Just some small platform game made in sdl3 and c and if i figure out how to use box2d OR CHIPMUNK maybe ill add it too
 
 
